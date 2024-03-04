@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/diseño.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6bb515fdf2.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icons/icon-pestaña.png">
+
     <title>Portfolio | Sebastian Rojas</title>
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div id="title">
-                <a href="">Portfolio</a>
-            </div>
-            
-            <div class="options">
-                <a href="#principal">Inicio</a>
-                <a href="#skills">Skills</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#footer">Contacto</a>
-            </div>
-        </nav>
+      <nav class="navbar"> <!-- NAVBAR -->
+        <div class="nav-bar-logo"><a href="#">Portfolio</a></div>
+        <input type='checkbox' id='check' /><!--NUEVO-->
+
+        <div class="opciones-navbar">
+            <li><a href="#principal">Sobre mi</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#title-project">Proyectos</a></li>
+            <li><a href="#footer">Contacto</a></li>
+            <label for="check" class="close-menu"><i class="fa-solid fa-xmark" style="color: #AD974F;"></i></label>
+        </div>
+        <label for="check" class="open-menu"><i class="fa-solid fa-bars" style="color: #AD974F;"></i></label><!--NUEVO-->
+    </nav>
     </header>
     
     <main>
@@ -30,9 +34,9 @@
                 <h1>Soy Sebastián Rojas.</h1>
                 <p>Como desarrollador web front-end, me especializo en crear código limpio y diseños perfectos. Con experiencia en la creación webs atractivas, brindo interactividad a cada proyecto. Mi enfoque en el diseño responsivo garantiza accesibilidad en todos los dispositivos.</p>
                 <div>
-                    <a href="https://github.com/SebasRojasM1"><img class="icon-contact" src="img/icons/github-logo.svg" alt="github-icon"></a>
-                    <a href="#"><img class="icon-contact" src="img/icons/linkedin-logo.svg" alt="linkedin-icon"></a>
-                    <a href="mailto:Sebasrojasm1@gmail.com"><img class="icon-contact" src="img/icons/email-icon.svg" alt="email-icon"></a>
+                    <a href="https://github.com/SebasRojasM1" target="_blank"><img class="icon-contact" src="img/icons/github-logo.svg" alt="github-icon"></a>
+                    <a href="https://www.linkedin.com/in/sebastianrojasmarin/" target="_blank"><img class="icon-contact" src="img/icons/linkedin-logo.svg" alt="linkedin-icon"></a>
+                    <a href="mailto:Sebasrojasm1@gmail.com" target="_blank"><img class="icon-contact" src="img/icons/email-icon.svg" alt="email-icon"></a>
                 </div>
 
                 <a id="about-boton" href="">Ver skills</a>
@@ -45,7 +49,7 @@
 
 
 
-        <section class="skills-container" id="#skills">
+        <section class="skills-container" id="skills" data-aos="zoom-in">
             <h2>Mis Skills</h2>
             <div class="skills">
                 <div><a href="#"><img src="img/icons/html-icon.svg" alt=""></a></div>
@@ -59,109 +63,181 @@
 
 
 
-        
-        <section class="proyectos-container" id="#proyectos">
-            <h3>Proyectos</h1>
-            <div class="proyectos">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/API-Peliculas.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">API Movies</h5>
-                      <a href="https://sebasrojasm1.github.io/APIMovies/" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
+        <h2 id="title-project">Proyectos</h2>
+        <section class="projects" id="projects">
+            <div class="card">
+                <figure>
+                  <img src="img/SS-Projects/APIestudiantesRiwi.png" alt="" />
+                </figure>
 
-
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/API-Restaurante.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">API Restaurante</h5>
-                      <a href="https://sebasrojasm1.github.io/APIRestaurante/" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/APIestudiantesRiwi.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">API Estudiantes Gosling</h5>
-                      <a href="https://sebasrojasm1.github.io/APIEstudiantesGosling/" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/Cinecolombia-page.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Cine Colombia</h5>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-
-                <div class="card" style="width: 18rem;">
-                    <div id="img-card">
-                        <img src="img/SS-Projects/Gosling-buscador.png" class="card-img-top" alt="...">
-                    </div>
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">Gosling buscador</h5>
-                      <a href="https://sebasrojasm1.github.io/GoslingBuscador/" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-                
-
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/Hogwarts Page.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Hogwarts page</h5>
-                      <a href="https://sebasrojasm1.github.io/HogwartsPage/" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/spaceX-api.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">SpaceX API</h5>
-                      <a href="https://sebasrojasm1.github.io/SpaceXApi/" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/AFTA.PNG" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">AFTA Constructor</h5>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-
-                <div class="card" style="width: 18rem;">
-                    <img src="img/SS-Projects/replica-riwi.PNG" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Replica RIWI</h5>
-                      <a href="https://sebasrojasm1.github.io/replicaRiwi/" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="card-content">
+                  <h2>API Estudiante Gosling</h2>
+                  <a href="https://sebasrojasm1.github.io/APIEstudiantesGosling/" target="_blank" class="read-more">
+                    Ir al proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                  </a>
                 </div>
             </div>
-        </section>
+
+            <div class="card">
+                <figure>
+                  <img src="img/SS-Projects/Cinecolombia-page.png" alt="" />
+                </figure>
+
+                <div class="card-content">
+                  <h2>Cine Colombia</h2>
+                  <a href="https://sebasrojasm1.github.io/cineColombiaProject/" target="_blank" class="read-more">
+                    Ir al proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
+                  </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                  <img src="img/SS-Projects/Gosling-buscador.png" alt="" />
+                </figure>
+
+                <div class="card-content">
+                  <h2>Gosling Buscador</h2>
+                  <a href="https://sebasrojasm1.github.io/GoslingBuscador/" target="_blank" class="read-more">
+                    Ir al proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+            </div>
+
+            <div class="card">
+              <figure>
+                <img src="img/SS-Projects/Hogwarts Page.png" alt="" />
+              </figure>
+
+              <div class="card-content">
+                <h2>Hogwarts page</h2>
+                <a href="https://sebasrojasm1.github.io/HogwartsPage/" target="_blank" class="read-more">
+                  Ir al proyecto
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          
+
+            <div class="card">
+              <figure>
+                <img src="img/SS-Projects/spaceX-api.png" alt="" />
+              </figure>
+
+              <div class="card-content">
+                <h2>SpaceX API</h2>
+                <a href="https://sebasrojasm1.github.io/SpaceXApi/" target="_blank" class="read-more">
+                  Ir al proyecto
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <figure>
+                <img src="img/SS-Projects/AFTA.PNG" alt="" />
+              </figure>
+
+              <div class="card-content">
+                <h2>AFTA Constructor Project</h2>
+                <a href="#" target="_blank" class="read-more">
+                  Ir al proyecto
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <figure>
+                <img src="img/SS-Projects/replica-riwi.PNG" alt="" />
+              </figure>
+
+              <div class="card-content">
+                  <h2>Replica Riwi page</h2>
+                  <a href="https://sebasrojasm1.github.io/replicaRiwi/" target="_blank" class="read-more">
+                    Ir al proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <figure>
+                  <img src="img/SS-Projects/API-Peliculas.png" alt="" />
+                </figure>
+
+                <div class="card-content">
+                  <h2>API Peliculas</h2>
+                  <a href="https://sebasrojasm1.github.io/APIMovies/" target="_blank" class="read-more">
+                    Ir al proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <figure>
+                  <img src="img/SS-Projects/API-Restaurante.png" alt="" />
+                </figure>
+
+                <div class="card-content">
+                  <h2>API Restaurante</h2>
+                  <a href="https://sebasrojasm1.github.io/APIRestaurante/" target="_blank" class="read-more">
+                    Ir al proyecto
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
+            </div>
+          </section>
     </main>
 
-    <footer id="">
+
+
+
+    <footer id="footer">
         <h4>Desarrollador Web</h4>
         <p>Apasionado por el desarrollo Front-end, siempre busco la mejor manera de satisfacer las necesidades de aquellos clientes que desean una web creativa, funcional y optima para sus servicios.</p>
-        <div class="social-media-footer">
-            <a href="https://github.com/SebasRojasM1"><img class="icon-contact" src="img/icons/github-logo.svg" alt="github-icon"></a>
-            <a href="#"><img class="icon-contact" src="img/icons/linkedin-logo.svg" alt="linkedin-icon"></a>
-            <a href="mailto:Sebasrojasm1@gmail.com"><img class="icon-contact" src="img/icons/email-icon.svg" alt="email-icon"></a>
+        <div class="social-media-footer" data-aos="zoom-in">
+            <a href="https://github.com/SebasRojasM1" target="_blank"><img class="icon-contact" src="img/icons/github-logo.svg" alt="github-icon"></a>
+            <a href="https://www.linkedin.com/in/sebastianrojasmarin/" target="_blank"><img class="icon-contact" src="img/icons/linkedin-logo.svg" alt="linkedin-icon"></a>
+            <a href="mailto:Sebasrojasm1@gmail.com" target="_blank"><img class="icon-contact" src="img/icons/email-icon.svg" alt="email-icon"></a>
         </div>
 
         <div class="copyright">
-            <p>Derechos reservados 2024 © Sebastián Rojas</p>
+            <p>Derechos reservados 2024 © Sebastián Rojas.</p>
         </div>
     </footer>
 
     <div class="contact-whatsapp">
-        <a href=""><img src="img/icons/whatsapp-logo.svg" alt="whatsapp-icon"></a>
+        <a href="" target="_blank"><img src="img/icons/whatsapp-logo.svg" alt="whatsapp-icon"></a>
     </div>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+          duration: 1500,
+      });
+  </script>
 </body>
 </html>
