@@ -1,7 +1,7 @@
 const express = require("express")
 const mongoose = require("mongoose")
 
-mongoose.connect(`mongodb+srv://sebasrojasm1:Dipamagri1*@cluster0.govfesq.mongodb.net/`);
+mongoose.connect(`mongodb+srv://sebasrojasm1:zdnijfhgzXuIpJAp@cluster0.xhkv5f6.mongodb.net/`);
 
 const db = mongoose.connection;
 
